@@ -1,0 +1,49 @@
+{
+  "name": "aoi-hitomi-engine",
+  "version": "24.9.0",
+  "description": "藍眼引擎 Aoi Hitomi Engine",
+  "homepage": "https://github.com/ccpl17/aoi-hitomi-engine",
+  "license": "MIT",
+  "author": "鐘柏倫 Cenlun Chung Po Lun",
+  "repository": "github:ccpl17/aoi-hitomi-engine",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/animations": "18.2.4",
+    "@angular/common": "18.2.4",
+    "@angular/compiler": "18.2.4",
+    "@angular/core": "18.2.4",
+    "@angular/forms": "18.2.4",
+    "@angular/platform-browser": "18.2.4",
+    "@angular/platform-browser-dynamic": "18.2.4",
+    "@angular/router": "18.2.4",
+    "@ng-icons/core": "29.5.0",
+    "@ng-icons/heroicons": "29.5.0",
+    "rxjs": "7.8.1",
+    "tslib": "2.7.0",
+    "zone.js": "0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "18.2.4",
+    "@angular/cli": "18.2.4",
+    "@angular/compiler-cli": "18.2.4",
+    "angular-eslint": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.10.0",
+    "postcss": "8.4.47",
+    "prettier": "3.3.3",
+    "tailwindcss": "3.4.11",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.6.0"
+  },
+  "engines": {
+    "node": "22.8.0",
+    "npm": "請使用 Yarn 4.4.1 安裝相依套件"
+  },
+  "private": true,
+  "packageManager": "yarn@4.4.1"
+}
