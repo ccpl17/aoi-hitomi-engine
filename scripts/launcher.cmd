@@ -12,7 +12,7 @@ set title=藍眼引擎啟動器 Aoi Hitomi Engine Launcher
 set app_name=aoi-hitomi-engine
 
 @rem 應用程式版本
-set app_version=24.9.0
+set app_version=24.10.0
 
 @rem Python 版本
 set python_version=3.12.7
