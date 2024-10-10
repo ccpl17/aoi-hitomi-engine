@@ -15,7 +15,7 @@ set app_name=aoi-hitomi-engine
 set app_version=24.9.0
 
 @rem Python 版本
-set python_version=3.12.6
+set python_version=3.12.7
 
 @rem Python 套件清單
 set python_packages=^
