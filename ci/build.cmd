@@ -12,16 +12,16 @@ set title=藍眼引擎建置器 Aoi Hitomi Engine Builder
 set app_name=aoi-hitomi-engine
 
 @rem 應用程式版本
-set app_version=24.9.0
+set app_version=24.10.0
 
 @rem Node.js 版本
-set node_version=22.8.0
+set node_version=22.9.0
 
 @rem Python 版本
-set python_version=3.12.6
+set python_version=3.12.7
 
 @rem Yarn 版本
-set yarn_version=4.4.1
+set yarn_version=4.5.0
 
 rem 設定 Unicode 控制字元
 set ESC=

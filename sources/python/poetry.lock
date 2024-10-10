@@ -235,13 +235,13 @@ pyobjc-framework-Cocoa = ">=10.3.1"
 
 [[package]]
 name = "pythonnet"
-version = "3.0.3"
+version = "3.0.4"
 description = ".NET and Mono integration for Python"
 optional = false
 python-versions = "<3.13,>=3.7"
 files = [
-    {file = "pythonnet-3.0.3-py3-none-any.whl", hash = "sha256:62486f860c7955b7dcf470e085e4d2b599512224ca24193f716e857b496c530f"},
-    {file = "pythonnet-3.0.3.tar.gz", hash = "sha256:8d4b2e97158a023875f8647458a58f38817f4fe39af60abdd6b0d8adf1d77e75"},
+    {file = "pythonnet-3.0.4-py3-none-any.whl", hash = "sha256:a63979eb66293368659849e0a7e0c55cc064c153b62cd540b614ac36895cc598"},
+    {file = "pythonnet-3.0.4.tar.gz", hash = "sha256:c92fbcfddd16575f7e75a643302271658b606d8557df7f0132ac240e03cc3a8f"},
 ]
 
 [package.dependencies]
@@ -330,5 +330,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "3.12.6"
-content-hash = "73b7e7d568f0be4836e6fd69d6c8bdbb831f6a109f9aa30bb9892a2a90b4e45b"
+python-versions = "3.12.7"
+content-hash = "4894bffb9c721951c040f169f4be247b16a6e518ee659687c920741a65767cac"
