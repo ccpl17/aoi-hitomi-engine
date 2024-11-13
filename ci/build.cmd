@@ -15,13 +15,13 @@ set app_name=aoi-hitomi-engine
 set app_version=24.10.0
 
 @rem Node.js 版本
-set node_version=22.9.0
+set node_version=22.11.0
 
 @rem Python 版本
 set python_version=3.12.7
 
 @rem Yarn 版本
-set yarn_version=4.5.0
+set yarn_version=4.5.1
 
 rem 設定 Unicode 控制字元
 set ESC=
