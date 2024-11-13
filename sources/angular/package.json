@@ -1,6 +1,6 @@
 {
   "name": "aoi-hitomi-engine",
-  "version": "24.10.0",
+  "version": "24.11.0",
   "description": "藍眼引擎 Aoi Hitomi Engine",
   "homepage": "https://github.com/ccpl17/aoi-hitomi-engine",
   "license": "MIT",
@@ -13,37 +13,37 @@
     "lint": "ng lint"
   },
   "dependencies": {
-    "@angular/animations": "18.2.8",
-    "@angular/common": "18.2.8",
-    "@angular/compiler": "18.2.8",
-    "@angular/core": "18.2.8",
-    "@angular/forms": "18.2.8",
-    "@angular/platform-browser": "18.2.8",
-    "@angular/platform-browser-dynamic": "18.2.8",
-    "@angular/router": "18.2.8",
-    "@ng-icons/core": "29.5.1",
-    "@ng-icons/heroicons": "29.5.1",
+    "@angular/animations": "18.2.11",
+    "@angular/common": "18.2.11",
+    "@angular/compiler": "18.2.11",
+    "@angular/core": "18.2.11",
+    "@angular/forms": "18.2.11",
+    "@angular/platform-browser": "18.2.11",
+    "@angular/platform-browser-dynamic": "18.2.11",
+    "@angular/router": "18.2.11",
+    "@ng-icons/core": "29.9.0",
+    "@ng-icons/heroicons": "29.9.0",
     "rxjs": "7.8.1",
-    "tslib": "2.7.0",
+    "tslib": "2.8.1",
     "zone.js": "0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "18.2.8",
-    "@angular/cli": "18.2.8",
-    "@angular/compiler-cli": "18.2.8",
-    "angular-eslint": "18.3.1",
+    "@angular-devkit/build-angular": "18.2.11",
+    "@angular/cli": "18.2.11",
+    "@angular/compiler-cli": "18.2.11",
+    "angular-eslint": "18.4.0",
     "autoprefixer": "10.4.20",
-    "eslint": "9.12.0",
-    "postcss": "8.4.47",
+    "eslint": "9.14.0",
+    "postcss": "8.4.49",
     "prettier": "3.3.3",
-    "tailwindcss": "3.4.13",
+    "tailwindcss": "3.4.14",
     "typescript": "5.5.4",
-    "typescript-eslint": "8.8.1"
+    "typescript-eslint": "8.14.0"
   },
   "engines": {
-    "node": "22.9.0",
-    "npm": "請使用 Yarn 4.5.0 安裝相依套件"
+    "node": "22.11.0",
+    "npm": "請使用 Yarn 4.5.1 安裝相依套件"
   },
   "private": true,
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.1"
 }
