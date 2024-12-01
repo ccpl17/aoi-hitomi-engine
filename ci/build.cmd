@@ -21,7 +21,7 @@ set node_version=22.11.0
 set python_version=3.12.7
 
 @rem Yarn 版本
-set yarn_version=4.5.1
+set yarn_version=4.5.3
 
 rem 設定 Unicode 控制字元
 set ESC=
