@@ -189,8 +189,6 @@ rem 複製已完成建置的 Angular 應用程式
 rem "複製 Python 應用程式原始碼"
     echo %arrow_blue% %white%正在複製 Python 應用程式原始碼%default%
     xcopy %source_python%\aoi_hitomi_engine %bundle_python%\aoi_hitomi_engine /q /i /e /y
-    del %bundle_python%\aoi_hitomi_engine\__main__.py /q
-    copy /y %source_python%\main.py %bundle_python%\ahe.py
     echo.
 
 rem 複製應用程式腳本

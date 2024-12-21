@@ -47,7 +47,7 @@ rem 設定應用程式二進位檔案目錄位置
 set bin=%root%\bin
 
 rem 設定主程式位置
-set main_program=%bin%\ahe.pyc
+set main_program=%bin%\aoi_hitomi_engine\__main__.pyc
 
 rem 設定執行環境目錄位置
 set runtime=%root%\runtime
