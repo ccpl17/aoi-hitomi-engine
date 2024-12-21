@@ -134,7 +134,7 @@ rem 安裝 setuptools
 
 rem 安裝啟動應用程式所需要的所有 Python 套件
     echo %arrow_blue% %white%正在安裝啟動應用程式所需要的所有 Python 套件%default%
-    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview rich
+    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview==5.3.2 rich==13.9.4
     echo.
 
 rem 解除安裝 setuptools
