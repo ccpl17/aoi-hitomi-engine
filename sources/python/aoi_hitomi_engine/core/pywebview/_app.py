@@ -6,7 +6,7 @@ from webview import start as webview_start
 from webview.window import Window as WebViewWindow
 
 from aoi_hitomi_engine.core.pywebview._bridge import InteropBridge
-from aoi_hitomi_engine.utilities.path import source_angular
+from aoi_hitomi_engine.helpers import PathHelper
 
 
 @final
@@ -33,7 +33,7 @@ class BootstrapApplication:
             self.__main_window_url = "http://localhost:4200/"
             self.__is_dev = True
         else:
-            self.__main_window_url = str(source_angular() / "aoi-hitomi-engine" / "browser" / "index.html")
+            self.__main_window_url = str(PathHelper.static_assets_dir() / "index.html")
 
     def __construct_webview_window(self) -> None:
         self.__main_window = create_webview_window(title=self.__main_window_title,
