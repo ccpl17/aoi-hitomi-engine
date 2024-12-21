@@ -3,7 +3,7 @@ from typing import final, Final
 from webview import create_window as create_webview_window
 from webview import settings as webview_settings
 from webview import start as webview_start
-from webview.window import Window as WebviewWindow
+from webview.window import Window as WebViewWindow
 
 from aoi_hitomi_engine.core.pywebview._bridge import InteropBridge
 from aoi_hitomi_engine.utilities.path import source_angular
@@ -11,7 +11,7 @@ from aoi_hitomi_engine.utilities.path import source_angular
 
 @final
 class BootstrapApplication:
-    __main_window: WebviewWindow
+    __main_window: WebViewWindow
     __main_window_title: Final[str] = "藍眼引擎 Aoi Hitomi Engine"
     __main_window_url: str
     __main_window_width: Final[int] = 1280
