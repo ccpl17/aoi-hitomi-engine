@@ -29,12 +29,11 @@ class BootstrapApplication:
 
     def __check_dev_or_not(self,
                            dev_or_not: bool) -> None:
-        match dev_or_not:
-            case True:
-                self.__main_window_url = "http://localhost:4200/"
-                self.__is_dev = True
-            case _:
-                self.__main_window_url = str(source_angular() / "aoi-hitomi-engine" / "browser" / "index.html")
+        if dev_or_not is True:
+            self.__main_window_url = "http://localhost:4200/"
+            self.__is_dev = True
+        else:
+            self.__main_window_url = str(source_angular() / "aoi-hitomi-engine" / "browser" / "index.html")
 
     def __construct_webview_window(self) -> None:
         self.__main_window = create_webview_window(title=self.__main_window_title,
