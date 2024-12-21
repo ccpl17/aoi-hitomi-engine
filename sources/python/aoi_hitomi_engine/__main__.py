@@ -7,7 +7,7 @@ from typing import final, Final
 path.insert(0,
             str(Path(__file__).parent.parent))
 try:
-    from aoi_hitomi_engine.core.bootstrap import BootstrapApplication
+    from aoi_hitomi_engine.core.pywebview import BootstrapApplication
 except ImportError:
     BootstrapApplication = None
 

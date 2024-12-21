@@ -5,7 +5,7 @@ from webview import settings as webview_settings
 from webview import start as webview_start
 from webview.window import Window as WebviewWindow
 
-from aoi_hitomi_engine.core.ui.bridge import InteropBridge
+from aoi_hitomi_engine.core.pywebview._bridge import InteropBridge
 from aoi_hitomi_engine.utilities.path import source_angular
 
 
