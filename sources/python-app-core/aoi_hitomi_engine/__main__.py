@@ -1,4 +1,5 @@
 from argparse import ArgumentParser, Namespace
+from logging import exception
 from pathlib import Path
 from sys import exit as run
 from sys import path
@@ -8,8 +9,10 @@ path.insert(0,
             str(Path(__file__).parent.parent))
 try:
     from aoi_hitomi_engine.core.pywebview import BootstrapApplication
+    from aoi_hitomi_engine.helpers import RichLogger
 except ImportError:
     BootstrapApplication = None
+    RichLogger = None
 
 
 @final
@@ -30,4 +33,8 @@ class AoiHitomiEngine:
 
 
 if __name__ == "__main__":
-    run(AoiHitomiEngine.main())
+    try:
+        RichLogger.initialize()
+        run(AoiHitomiEngine.main())
+    except Exception as error:
+        exception(error)
