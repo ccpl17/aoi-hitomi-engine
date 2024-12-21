@@ -43,23 +43,17 @@ set "arrow_blue=%blue%%arrow_long_right%"
 rem 設定根目錄位置
 set root=%cd%
 
-rem 設定應用程式原始碼目錄位置
-set sources=%root%\sources
-
-rem 設定 Python 應用程式原始碼目錄位置
-set source_python=%sources%\python
+rem 設定應用程式二進位檔案目錄位置
+set bin=%root%\bin
 
 rem 設定主程式位置
-set main_program=%source_python%\aoi_hitomi_engine\__main__.pyc
+set main_program=%bin%\ahe.pyc
 
 rem 設定執行環境目錄位置
 set runtime=%root%\runtime
 
-rem 設定 Python 執行環境目錄名稱
-set python_runtime_directory_name=python
-
 rem 設定 Python 執行環境目錄位置
-set python_runtime=%runtime%\%python_runtime_directory_name%
+set python_runtime=%runtime%
 
 rem 設定 Python 直譯器位置
 set python=%python_runtime%\python.exe
