@@ -50,4 +50,6 @@ class BootstrapApplication:
         webview_settings["OPEN_DEVTOOLS_IN_DEBUG"] = False
 
     def __start_webview_window_session(self) -> None:
-        webview_start(debug=self.__is_dev)
+        webview_start(debug=self.__is_dev,
+                      private_mode=False,
+                      storage_path=str(PathHelper.app_data_dir()))
