@@ -369,17 +369,6 @@ typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.1
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
-name = "tomlkit"
-version = "0.13.2"
-description = "Style preserving TOML library"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "tomlkit-0.13.2-py3-none-any.whl", hash = "sha256:7a974427f6e119197f670fbbbeae7bef749a6c14e793db934baefc1b5f03efde"},
-    {file = "tomlkit-0.13.2.tar.gz", hash = "sha256:fff5fe59a87295b278abd31bec92c15d9bc4a06885ab12bcea52c71119392e79"},
-]
-
-[[package]]
 name = "typing-extensions"
 version = "4.12.2"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -390,18 +379,7 @@ files = [
     {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
 ]
 
-[[package]]
-name = "win32more"
-version = "0.5.6"
-description = "Python bindings for Windows API"
-optional = false
-python-versions = ">=3.9"
-files = [
-    {file = "win32more-0.5.6-py3-none-any.whl", hash = "sha256:66c4469db187259581ec411161c456caae5b1f0a0209c1db2dffcc19847b33fb"},
-    {file = "win32more-0.5.6.tar.gz", hash = "sha256:df7d316dbbeda3ee321fe3e67c43799b919403f90940952ec43c99d8a570878d"},
-]
-
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.14"
-content-hash = "383bef02f469b80fe7fd7874d8f35e1baa41fdaabb99212bbb441995aeb2f70a"
+content-hash = "34e1f717ce89d447fc6ff66ea13979c5be81cbf73f9f7d161572d5460bb2307a"
