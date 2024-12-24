@@ -1,3 +1,4 @@
+from platform import system
 from typing import final, Final
 
 from webview import create_window as create_webview_window
@@ -47,7 +48,8 @@ class BootstrapApplication:
 
     @staticmethod
     def __prevent_open_devtools_in_debug_mode() -> None:
-        webview_settings["OPEN_DEVTOOLS_IN_DEBUG"] = False
+        if system() == "Windows":
+            webview_settings["OPEN_DEVTOOLS_IN_DEBUG"] = False
 
     def __start_webview_window_session(self) -> None:
         webview_start(debug=self.__is_dev,
