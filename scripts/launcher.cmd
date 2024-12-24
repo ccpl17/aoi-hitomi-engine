@@ -15,7 +15,7 @@ set app_name=aoi-hitomi-engine
 set app_version=24.12.0
 
 @rem Python 版本
-set python_version=3.12.7
+set python_version=3.13.1
 
 rem 剖析 Python 次要版本
     for %%v in (%python_version%) do (
