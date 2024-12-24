@@ -15,10 +15,10 @@ set app_name=aoi-hitomi-engine
 set app_version=24.12.0
 
 @rem Node.js 版本
-set node_version=22.11.0
+set node_version=22.12.0
 
 @rem Python 版本
-set python_version=3.12.7
+set python_version=3.13.1
 
 @rem Yarn 版本
 set yarn_version=4.5.3
