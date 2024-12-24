@@ -7,7 +7,6 @@ import { NavComponent } from "./components/nav/nav.component";
 
 @Component({
   selector: "app-root",
-  standalone: true,
   imports: [RouterOutlet, AppLayoutDirective, NavComponent],
   template: `
     @if (app.runtimeIsPython()) {

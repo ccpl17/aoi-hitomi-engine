@@ -16,7 +16,6 @@ import { ButtonInNavDirective } from "./button.directive";
 
 @Component({
   selector: "app-nav",
-  standalone: true,
   imports: [LayoutForNavDirective, ButtonInNavDirective, NgIconComponent],
   viewProviders: [
     provideIcons({
