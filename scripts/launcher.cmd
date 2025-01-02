@@ -12,10 +12,10 @@ set title=藍眼引擎啟動器 Aoi Hitomi Engine Launcher
 set app_name=aoi-hitomi-engine
 
 @rem 應用程式版本
-set app_version=24.12.0
+set app_version=25.1.0
 
 @rem Python 版本
-set python_version=3.12.7
+set python_version=3.13.1
 
 rem 剖析 Python 次要版本
     for %%v in (%python_version%) do (
@@ -43,23 +43,17 @@ set "arrow_blue=%blue%%arrow_long_right%"
 rem 設定根目錄位置
 set root=%cd%
 
-rem 設定應用程式原始碼目錄位置
-set sources=%root%\sources
-
-rem 設定 Python 應用程式原始碼目錄位置
-set source_python=%sources%\python
+rem 設定應用程式二進位檔案目錄位置
+set bin=%root%\bin
 
 rem 設定主程式位置
-set main_program=%source_python%\aoi_hitomi_engine\__main__.pyc
+set main_program=%bin%\aoi_hitomi_engine\__main__.pyc
 
 rem 設定執行環境目錄位置
 set runtime=%root%\runtime
 
-rem 設定 Python 執行環境目錄名稱
-set python_runtime_directory_name=python
-
 rem 設定 Python 執行環境目錄位置
-set python_runtime=%runtime%\%python_runtime_directory_name%
+set python_runtime=%runtime%
 
 rem 設定 Python 直譯器位置
 set python=%python_runtime%\python.exe
@@ -140,7 +134,7 @@ rem 安裝 setuptools
 
 rem 安裝啟動應用程式所需要的所有 Python 套件
     echo %arrow_blue% %white%正在安裝啟動應用程式所需要的所有 Python 套件%default%
-    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview tomlkit win32more
+    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview==5.3.2 rich==13.9.4
     echo.
 
 rem 解除安裝 setuptools

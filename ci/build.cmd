@@ -12,13 +12,13 @@ set title=藍眼引擎建置器 Aoi Hitomi Engine Builder
 set app_name=aoi-hitomi-engine
 
 @rem 應用程式版本
-set app_version=24.12.0
+set app_version=25.1.0
 
 @rem Node.js 版本
-set node_version=22.11.0
+set node_version=22.12.0
 
 @rem Python 版本
-set python_version=3.12.7
+set python_version=3.13.1
 
 @rem Yarn 版本
 set yarn_version=4.5.3
@@ -49,10 +49,10 @@ rem 設定應用程式原始碼目錄位置
 set sources=%root%\sources
 
 rem 設定 Angular 應用程式原始碼目錄位置
-set source_angular=%sources%\angular
+set source_angular=%sources%\aoi-hitomi-engine
 
 rem 設定 Python 應用程式原始碼目錄位置
-set source_python=%sources%\python
+set source_python=%sources%\python-app-core
 
 rem 設定腳本目錄位置
 set scripts=%root%\scripts
@@ -64,10 +64,10 @@ rem 設定未封裝目錄位置
 set bundle_unpacked=%bundle%\unpacked
 
 rem 設定 Angular 應用程式原始碼封裝目錄位置
-set bundle_angular=%bundle_unpacked%\sources\angular
+set bundle_angular=%bundle_unpacked%\wwwroot
 
 rem 設定 Python 應用程式原始碼封裝目錄位置
-set bundle_python=%bundle_unpacked%\sources\python
+set bundle_python=%bundle_unpacked%\bin
 
 rem 設定執行環境目錄位置
 set runtime=%root%\runtimes
@@ -183,7 +183,7 @@ rem 清除未封裝目錄
 
 rem 複製已完成建置的 Angular 應用程式
     echo %arrow_blue% %white%正在複製已完成建置的 Angular 應用程式%default%
-    xcopy %source_angular%\dist\aoi-hitomi-engine %bundle_angular%\aoi-hitomi-engine /q /i /e /y
+    xcopy %source_angular%\dist\aoi-hitomi-engine\browser %bundle_angular% /q /i /e /y
     echo.
 
 rem "複製 Python 應用程式原始碼"
@@ -196,10 +196,11 @@ rem 複製應用程式腳本
     copy /y %scripts%\launcher.cmd %bundle_unpacked%\launcher.cmd
     echo.
 
-rem 複製 Aoi Hitomi Engine (藍眼引擎) 授權條款
-    echo %arrow_blue% %white%正在複製 Aoi Hitomi Engine (藍眼引擎) 授權條款%default%
-    copy /y %source_angular%\LICENSE.aoi-hitomi-engine %bundle_angular%\LICENSE.aoi_hitomi_engine.txt
-    copy /y %source_python%\LICENSE.aoi-hitomi-engine %bundle_python%\LICENSE.aoi_hitomi_engine.txt
+rem "複製開放原始碼授權條款"
+    echo %arrow_blue% %white%正在複製開放原始碼授權條款%default%
+    mkdir %bundle_unpacked%\licenses
+    copy /y %root%\LICENSE.aoi-hitomi-engine %bundle_unpacked%\licenses\LICENSE.aoi_hitomi_engine.txt
+    copy /y %source_angular%\dist\aoi-hitomi-engine\3rdpartylicenses.txt %bundle_unpacked%\licenses\3rdpartylicenses.txt
     echo.
 
 @rem 檢查 Python 執行環境

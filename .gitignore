@@ -1,2 +1,9 @@
+# Compiled output
 bundle/
+
+# Miscellaneous
 runtimes/
+
+# System files
+.DS_Store
+Thumbs.db

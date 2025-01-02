@@ -1,3 +1,0 @@
-pywebview == 5.3.2 ; python_version >= "3.12" and python_version < "3.13" and platform_system == "Windows"
-tomlkit == 0.13.2 ; python_version >= "3.12" and python_version < "3.13" and platform_system == "Windows"
-win32more == 0.5.6 ; python_version >= "3.12" and python_version < "3.13" and platform_system == "Windows"
