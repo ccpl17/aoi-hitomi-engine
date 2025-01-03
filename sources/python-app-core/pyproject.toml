@@ -1,7 +1,7 @@
 [tool.poetry]
 package-mode = false
 name = "aoi-hitomi-engine"
-version = "25.1.0"
+version = "25.1.1"
 description = "藍眼引擎 Aoi Hitomi Engine"
 license = "MIT"
 authors = ["Cenlun Chung Po Lun <104301294+ccpl17@users.noreply.github.com>"]
@@ -10,5 +10,5 @@ repository = "https://github.com/ccpl17/aoi-hitomi-engine"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.14"
-pywebview = { version = "5.3.2", markers = "platform_system == 'Windows'" }
-rich = { version = "13.9.4", markers = "platform_system == 'Windows'" }
+pywebview = { version = "5.3.2", markers = "platform_system == 'Windows' or platform_system == 'Darwin'" }
+rich = { version = "13.9.4", markers = "platform_system == 'Windows' or platform_system == 'Darwin'" }
