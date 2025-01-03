@@ -23,9 +23,9 @@ class FilePickerHelper:
 
     @staticmethod
     def pick_single_folder(webview_window: WebViewWindow) -> Path | None:
-        path: str | None = webview_window.create_file_dialog(FOLDER_DIALOG)
+        path: tuple | None = webview_window.create_file_dialog(FOLDER_DIALOG)
 
-        return Path(path) if path is not None \
+        return Path(path[0]) if path is not None \
             else None
 
     @staticmethod
