@@ -12,7 +12,7 @@ set title=藍眼引擎啟動器 Aoi Hitomi Engine Launcher
 set app_name=aoi-hitomi-engine
 
 @rem 應用程式版本
-set app_version=25.1.1
+set app_version=25.2.0
 
 @rem Python 版本
 set python_version=3.13.1
@@ -134,7 +134,7 @@ rem 安裝 setuptools
 
 rem 安裝啟動應用程式所需要的所有 Python 套件
     echo %arrow_blue% %white%正在安裝啟動應用程式所需要的所有 Python 套件%default%
-    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview==5.3.2 rich==13.9.4
+    call %python% %pip_pyz% install --no-warn-script-location --no-cache-dir pywebview==5.4 rich==13.9.4
     echo.
 
 rem 解除安裝 setuptools
